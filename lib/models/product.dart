@@ -71,6 +71,7 @@ class Products with ChangeNotifier {
 
   Future<void> favoriteProduct(Product product) async {
     product_list.contains(product) ? product_list.removeWhere((element) => element.id == product.id) : product_list.add(product);
+    product_list.sort((a,b) => a.name.compareTo(b.name));
     notifyListeners();
   }
 }

@@ -14,7 +14,7 @@ class FavoriteProducts extends StatelessWidget {
         iconTheme: IconThemeData(
             color: Colors.white
         ),
-        title: Text('Favorites', style: TextStyle( fontFamily: 'Quicksand', color: Colors.white),),
+        title: Text('${_productList.length} Favorite product(s)', style: TextStyle( fontFamily: 'Quicksand', color: Colors.white),),
         elevation: 0.0,
         centerTitle: true,
         backgroundColor: Theme.of(context).primaryColor,
